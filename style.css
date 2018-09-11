@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    text-align: center;
+
+}
+
+.row1 {
+    margin-left: -40px;
+}
+
+.row2 {
+    margin-left: -105px;
+}
+
+.keys {
+    width: 4em;
+    height: 4em;
+    line-height: 4em;
+    margin: 6px 3px;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 8px;
+    background: #000;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    /*cursor: pointer;*/
+    position: relative;
+}
+
+.keys span {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.keys button {
+    padding: 1px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.keys img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 5px;
+    bottom: 3px;
+}
+
+.keys:hover button {
+    display: inherit;
+    cursor: pointer
+}
+
