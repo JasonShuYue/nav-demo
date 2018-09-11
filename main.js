@@ -81,10 +81,7 @@ function generateKeyBoard(keys, hash) {
             button.onclick = function(e) {
                 let keyValue = e.target.id;
                 let newValue = prompt("给我一个网址:");
-                console.log(keyValue)
-                console.log(newValue)
                 hash[keyValue] = newValue;
-                console.log(hash)
                 img.src = "http://" + hash[keyValue] + "/favicon.ico" || "null";
                 img.onerror = function(e) {
                     e.target.src = "./default_icon.png";
